@@ -15,7 +15,7 @@ variable "dns_resolvers" {
 
 variable "ssh_ip_addrs" {
     type = "list"
-    default = ["99.31.76.144/32"]
+    default = ["0.0.0.0/0"]
 }
 
 variable "reserved_subnet_cidr" {
