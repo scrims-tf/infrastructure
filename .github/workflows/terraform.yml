@@ -12,7 +12,7 @@ jobs:
     - name: Filter to PR Opened
       uses: actions/bin/filter@master
       with:
-        args: "action 'opened|synchronize'"
+        args: "action 'opened|rerequested|synchronize'"
             
     - name: Terraform Init
       uses: hashicorp/terraform-github-actions/init@v0.4.0
