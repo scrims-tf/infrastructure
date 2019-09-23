@@ -13,13 +13,7 @@ jobs:
       uses: actions/bin/filter@master
       with:
         args: "action 'opened|synchronize'"
-    
-    - name: Terraform Format
-      uses: hashicorp/terraform-github-actions/fmt@v0.4.0
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        TF_ACTION_WORKING_DIR: '.'
-        
+            
     - name: Terraform Init
       uses: hashicorp/terraform-github-actions/init@v0.4.0
       env:
